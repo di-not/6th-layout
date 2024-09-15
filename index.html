@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/reset.css" />
+
+		<link rel="stylesheet" href="libs/nouislider.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="logo">SneakMax</a>
+					<nav class="nav">
+						<button class="burger-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<ul class="nav__list">
+							<li class="nav__item-close">
+								<button class="close__btn">
+									<img src="images/crest.svg" alt="" class="close__btn-img" />
+								</button>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Каталог</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">О нас</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Подбор товара</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Наша команда</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Доставка и оплата</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Контакты</a>
+							</li>
+						</ul>
+						<div class="nav__item nav__item-cart">
+							<a href="#" class="cart">
+								<p>Корзина</p>
+								<img src="images/cart.svg" alt="Корзина" class="cart_img" />
+								<!-- <span>1</span> -->
+							</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="container">
+					<div class="hero__inner">
+						<p class="hero__bg-text">SneakMax</p>
+						<h1 class="hero__title">
+							Кроссовки известных брендов с доставкой по России и СНГ
+						</h1>
+						<h2 class="hero__text">
+							Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse
+							и многие другие по низким ценам
+						</h2>
+						<button class="hero__button">Перейти к покупкам</button>
+					</div>
+				</div>
+			</section>
+			<section class="catalog">
+				<div class="container">
+					<div class="catalog__inner">
+						<h2 class="catalog__title">Каталог</h2>
+						<div class="catalog__left-small">
+							<button class="catalog__left-btn">Параметры</button>
+						</div>
+						<div class="catalog__left">
+							<h3 class="catalog__subtitle">Подбор по&nbsp;параметрам</h3>
+							<div class="catalog__price">
+								<p class="price__text">Цена, руб</p>
+								<div class="catalog__price-inputs">
+									<input
+										class="max-price"
+										type="number"
+										value="1850"
+										id="input-min"
+									/>
+									<span></span>
+									<input
+										class="min-price"
+										type="number"
+										value="25768"
+										id="input-max"
+									/>
+								</div>
+								<div id="slider"></div>
+							</div>
+							<div class="catalog__gender">
+								<p class="catalog__gender-title">Пол</p>
+								<div class="catalog__gender-checkboxes">
+									<label class="checkbox__block gender-man">
+										<input type="checkbox" class="checkbox" />
+										<span class="check-box__span"></span>
+										<span class="gender">мужской</span>
+									</label>
+									<label class="checkbox__block gender-woman">
+										<input type="checkbox" class="checkbox" />
+										<span class="check-box__span"></span>
+										<span class="gender">женский</span>
+									</label>
+								</div>
+							</div>
+							<div class="catalog__size">
+								<p class="catalog__size-title">Размер</p>
+								<table class="size__table">
+									<tbody>
+										<tr>
+											<td>35</td>
+											<td>36</td>
+											<td>37</td>
+										</tr>
+										<tr>
+											<td>38</td>
+											<td>39</td>
+											<td>40</td>
+										</tr>
+										<tr>
+											<td>41</td>
+											<td>42</td>
+											<td>43</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<button class="accept-button">Применить</button>
+							<button class="disable-button">сбросить</button>
+						</div>
+						<div class="catalog__right">
+							<ul class="catalog__list">
+								<li class="catalog__item">
+									<a href="#" class="catalog__item-link">
+										<img
+											src="images/catalog-img.jpg"
+											alt=""
+											class="catalog__item-img"
+										/>
+									</a>
+									<h4 class="catalog__item-text">
+										Кроссовки Nike Air Force 1 '07 QS
+									</h4>
+									<p class="catalog__item-price">11 000 р</p>
+								</li>
+								<li class="catalog__item">
+									<a href="#" class="catalog__item-link">
+										<img
+											src="images/catalog-img.jpg"
+											alt=""
+											class="catalog__item-img"
+										/>
+									</a>
+									<h4 class="catalog__item-text">
+										Кроссовки Nike Air Max 90 "Shimmer Polka"
+									</h4>
+									<p class="catalog__item-price">11 000 р</p>
+								</li>
+								<li class="catalog__item">
+									<a href="#" class="catalog__item-link">
+										<img
+											src="images/catalog-img.jpg"
+											alt=""
+											class="catalog__item-img"
+										/>
+									</a>
+									<h4 class="catalog__item-text">
+										Кроссовки Nike Force 1 '07 QS
+									</h4>
+									<p class="catalog__item-price">11 000 р</p>
+								</li>
+								<li class="catalog__item">
+									<a href="#" class="catalog__item-link">
+										<img
+											src="images/catalog-img.jpg"
+											alt=""
+											class="catalog__item-img"
+										/>
+									</a>
+									<h4 class="catalog__item-text">
+										Женские кроссовки Puma Force 1 Shadow
+									</h4>
+									<p class="catalog__item-price">19 789 р</p>
+								</li>
+							</ul>
+							<button class="catalog__right-btn">Показать еще</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="container">
+					<div class="about__inner">
+						<div class="about__block-text">
+							<h3 class="about__title">Пара слов о нас</h3>
+							<p class="about__text">
+								Спорт держит нас в форме. Учит дисциплине. Объединяет нас. Через
+								спорт мы можем менять жизни. В том числе с помощью
+								воодушевляющих историй спортсменов. Чтобы помочь тебе подняться
+								и двигаться вперед.
+							</p>
+							<span></span>
+							<a href="#" class="logo">SneakMax</a>
+						</div>
+						<div class="about__block-img">
+							<img src="images/about-bg-img.jpg" alt="" class="about__image" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="selection">
+				<div class="container">
+					<div class="selection__inner">
+						<div class="selection__container">
+							<div class="selection__top">
+								<h2 class="selection__title">
+									Мы подберем идеальную пару для вас
+								</h2>
+								<p class="selection__text">
+									Ответьте на три вопроса и мы вышлем каталог с самыми
+									подходящими для вас моделями
+								</p>
+							</div>
+							<div class="selection__form">
+								<p class="selection__form-question">
+									Какой тип кроссовок рассматриваете?
+								</p>
+
+								<ul class="selection__form-list">
+									<li class="selection__form-item">
+										<img
+											src="images/selection-type-img.jpg"
+											alt=""
+											class="selection__form-img"
+										/>
+										<label class="checkbox__block">
+											<input type="checkbox" class="checkbox" />
+											<span class="check-box__span"></span>
+											<span class="type">кеды</span>
+										</label>
+									</li>
+									<li class="selection__form-item">
+										<img
+											src="images/selection-type-img.jpg"
+											alt=""
+											class="selection__form-img"
+										/>
+										<label class="checkbox__block">
+											<input type="checkbox" class="checkbox" />
+											<span class="check-box__span"></span>
+											<span class="type">кеды</span>
+										</label>
+									</li>
+									<li class="selection__form-item">
+										<img
+											src="images/selection-type-img.jpg"
+											alt=""
+											class="selection__form-img"
+										/>
+										<label class="checkbox__block">
+											<input type="checkbox" class="checkbox" />
+											<span class="check-box__span"></span>
+											<span class="type">кеды</span>
+										</label>
+									</li>
+									<li class="selection__form-item">
+										<img
+											src="images/selection-type-img.jpg"
+											alt=""
+											class="selection__form-img"
+										/>
+										<label class="checkbox__block">
+											<input type="checkbox" class="checkbox" />
+											<span class="check-box__span"></span>
+											<span class="type">кеды</span>
+										</label>
+									</li>
+									<li class="selection__form-item">
+										<img
+											src="images/selection-type-img.jpg"
+											alt=""
+											class="selection__form-img"
+										/>
+										<label class="checkbox__block">
+											<input type="checkbox" class="checkbox" />
+											<span class="check-box__span"></span>
+											<span class="type">кеды</span>
+										</label>
+									</li>
+									<li class="selection__form-item">
+										<img
+											src="images/selection-type-img.jpg"
+											alt=""
+											class="selection__form-img"
+										/>
+										<label class="checkbox__block">
+											<input type="checkbox" class="checkbox" />
+											<span class="check-box__span"></span>
+											<span class="type">кеды</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="selection__bottom">
+								<span class="selection__step">1 из 3</span>
+								<button class="selection__next-btn">Следующий шаг</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="team">
+				<div class="container">
+					<div class="team__inner">
+						<h2 class="team__title">Наша команда</h2>
+						<ul class="team__list">
+							<li class="team__item">
+								<img src="images/team-img-1.jpg" alt="" class="team__img" />
+								<strong class="team__subtitle"> Максим Золотарев</strong>
+								<p class="team__post">Администратор</p>
+							</li>
+							<li class="team__item">
+								<img src="images/team-img-1.jpg" alt="" class="team__img" />
+								<strong class="team__subtitle"> Максим Золотарев</strong>
+								<p class="team__post">Администратор</p>
+							</li>
+							<li class="team__item">
+								<img src="images/team-img-1.jpg" alt="" class="team__img" />
+								<strong class="team__subtitle"> Максим Золотарев</strong>
+								<p class="team__post">Администратор</p>
+							</li>
+							<li class="team__item">
+								<img src="images/team-img-1.jpg" alt="" class="team__img" />
+								<strong class="team__subtitle"> Максим Золотарев</strong>
+								<p class="team__post">Администратор</p>
+							</li>
+							<li class="team__item">
+								<img src="images/team-img-1.jpg" alt="" class="team__img" />
+								<strong class="team__subtitle"> Максим Золотарев</strong>
+								<p class="team__post">Администратор</p>
+							</li>
+							<li class="team__item">
+								<img src="images/team-img-1.jpg" alt="" class="team__img" />
+								<strong class="team__subtitle"> Максим Золотарев</strong>
+								<p class="team__post">Администратор</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="questions">
+				<div class="container">
+					<div class="question__inner">
+						<h2 class="questions__title">Часто задаваемые вопросы</h2>
+						<ul class="questions__list">
+							<li class="questions__item" data-text="content-1">
+								<button
+									href="#"
+									class="questions__item-btn"
+									aria-expanded="false"
+								>
+									<p class="questions__item-num">Вопрос 1</p>
+									<div class="questions__item-cross">
+										<span></span>
+										<span></span>
+									</div>
+								</button>
+								<p
+									class="questions__item-text"
+									id="content-1"
+									aria-hidden="true"
+								>
+									А это ответ 1: в комплексе функционируют 6 детских садов с
+									площадками, воспитателями и всякими другими людьми
+								</p>
+							</li>
+							<li class="questions__item" data-text="content-2">
+								<button
+									href="#"
+									class="questions__item-btn"
+									aria-expanded="false"
+								>
+									<p class="questions__item-num">Вопрос 1</p>
+									<div class="questions__item-cross">
+										<span></span>
+										<span></span>
+									</div>
+								</button>
+								<p
+									class="questions__item-text"
+									id="content-2"
+									aria-hidden="true"
+								>
+									А это ответ 2: в комплексе функционируют 6 детских садов с
+									площадками, воспитателями и всякими другими людьми
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="container">
+					<div class="contacts__inner">
+						<div class="contacts__text">
+							<h2 class="contacts__title">Контакты</h2>
+							<ul class="contacts__offices">
+								<li class="contacts__office main-office">
+									<div class="about-main-office">
+										<h3 class="contacts__office-type">Главный офис</h3>
+
+										<button class="about-main-office-btn">?</button>
+										<span class="cloud__text">
+											<span>
+												Адрес и телефон для корреспонденции, инвесторов. Вопросы
+												о доставке, качестве обслуживания и товара просьба
+												задавать в отдел продаж
+											</span>
+										</span>
+									</div>
+									<a href="tel:+78007898989" class="contacts__office-tel"
+										>+7 800 789 89 89</a
+									>
+									<p class="contacts__office-address">
+										г. Санкт-Петербург, Комсомольская, 43 к1
+									</p>
+								</li>
+								<li class="contacts__office">
+									<h3 class="contacts__office-type">отдел продаж</h3>
+									<a href="tel:00000000000" class="contacts__office-tel"
+										>+7 800 789 89 89</a
+									>
+									<p class="contacts__office-address">
+										г. Санкт-Петербург, Комсомольская, 43 к1
+									</p>
+								</li>
+							</ul>
+							<ul class="contacts__socials-list">
+								<li class="contacts__socials-item">
+									<a href="" class="contacts-socials-link"
+										><img
+											src="images/social-1.svg"
+											alt=""
+											class="contacts__socials-img"
+									/></a>
+								</li>
+								<li class="contacts__socials-item">
+									<a href="" class="contacts-socials-link"
+										><img
+											src="images/social-2.svg"
+											alt=""
+											class="contacts__socials-img"
+									/></a>
+								</li>
+							</ul>
+						</div>
+						<img src="/images/cart-fake.jpg" alt="" class="iframe" />
+					</div>
+				</div>
+			</section>
+			<section class="feedback">
+				<div class="container">
+					<div class="feedback__inner">
+						<form class="feedback__form">
+							<h2 class="feedback__title">Есть вопросы?</h2>
+							<p class="feedback__text">
+								Заполните форму и наш менеджер свяжется с вами
+							</p>
+							<input
+								type="text"
+								class="feedback__form-name"
+								placeholder="Ваше имя"
+							/>
+							<input
+								type="text"
+								class="feedback__form-tel"
+								placeholder="Номер телефона"
+							/>
+							<button class="feedback__form-btn">Отправить</button>
+						</form>
+						<div class="feedback__inst">
+							<img
+								src="images/inst-logo.png"
+								alt=""
+								class="feedback__inst-logo"
+							/>
+							<img
+								src="images/inst-1.jpg"
+								alt=""
+								class="feedback__inst-img"
+							/><img
+								src="images/inst-2.jpg"
+								alt=""
+								class="feedback__inst-img"
+							/><img
+								src="images/inst-3.jpg"
+								alt=""
+								class="feedback__inst-img"
+							/><img
+								src="images/inst-4.jpg"
+								alt=""
+								class="feedback__inst-img"
+							/><img
+								src="images/inst-5.jpg"
+								alt=""
+								class="feedback__inst-img"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<a href="#" class="logo">SneakMax</a>
+					<nav class="footer__nav">
+						<ul class="footer__nav-list">
+							<li class="footer__nav-item">
+								<a href="" class="footer__nav-link">Каталог</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="" class="footer__nav-link">О нас</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="" class="footer__nav-link">Подбор товара</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="" class="footer__nav-link">Наша команда</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="" class="footer__nav-link">Доставка и оплата</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="" class="footer__nav-link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/main.js"></script>
+		<script src="libs/nouislider.min.js"></script>
+		<script src="js/range-slider.js"></script>
+	</body>
+</html>
